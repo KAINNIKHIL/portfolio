@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+  
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul id="nav-links">
+    <li><a href="#hero" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Home -->
+  <section id="hero">
+    <div id="dev-animation"></div>
+    <div class="hero-text">
+      <h2>Hello, I'm Nikhil Kaintura</h2>
+      <p>Full Stack Developer | Problem Solver | Innovator</p>
+      <button onclick="document.getElementById('projects').scrollIntoView()">See My Work</button>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+   <p style="font-size:18px; line-height:1.8; color:#ccd6f6;">
+  I’m a passionate <span style="color:#4fd1c5; font-weight:600;">Full Stack Developer</span> who loves turning ideas into reality through clean and efficient code.  
+  With strong skills in <span style="color:#4fd1c5;">HTML, CSS, JavaScript</span>, and modern frameworks,  
+  I enjoy building <span style="color:#4fd1c5;">beautiful, functional, and user-friendly</span> web experiences  
+  that make an impact.
+</p>
+
+</section>
+  <!-- Skills  -->
+   <section id="skills">
+    <div class="skills">
+  <h3 style="color:#4fd1c5; margin:20px 0 10px;">My Skills</h3>
+  <div class="skill-bar">
+    <p>HTML5</p>
+    <div class="bar"><span style="width: 95%;"></span></div>
+  </div>
+
+  <div class="skill-bar">
+    <p>CSS3</p>
+    <div class="bar"><span style="width: 90%;"></span></div>
+  </div>
+
+  <div class="skill-bar">
+    <p>JavaScript (ES6+)</p>
+    <div class="bar"><span style="width: 85%;"></span></div>
+  </div>
+
+  <div class="skill-bar">
+    <p>React.js</p>
+    <div class="bar"><span style="width: 80%;"></span></div>
+  </div>
+
+  <div class="skill-bar">
+    <p>Node.js</p>
+    <div class="bar"><span style="width: 75%;"></span></div>
+  </div>
+
+  
+  <ul style="list-style:none; padding:0; display:grid; grid-template-columns:repeat(auto-fit, minmax(150px,1fr)); gap:10px; color:#ccd6f6; font-size:16px; margin-top:20px;">
+    <li>⚡ Express.js</li>
+    <li>⚡ MongoDB</li>
+    <li>⚡ SQL / MySQL</li>
+    <li>⚡ Git & GitHub</li>
+    <li>⚡ UI/UX Basics</li>
+    <li>⚡ Fluid Design</li>
+  </ul>
+</div>
+  </section>
+
+ <!-- Projects -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+
+    <div class="project-card">
+      <img src="vibesoul_pic.png" alt="Social_Media">
+      <h3>Social Media Site</h3>
+      <p>VibeSoul is an MBTI-based social media web application where users can share posts (vibes), stories, and connect with others through likes, comments, and follows. It features real-time interactions, profile customization, and a clean, modern React + Appwrite powered UI</p>
+    </div>
+
+    <div class="project-card">
+      <img src="ecommerce_pic.jpg" alt="ecommerce_pic">
+      <h3>Ecommerce Site</h3>
+      <p>A fully functional e-commerce web application built with Django, HTML, CSS, and JavaScript, featuring user authentication, product listings, shopping cart, order management, and a seamless checkout process</p>
+    </div>
+
+   
+
+  </div>
+</section>
+
+
+  <!-- Contact -->
+   
+  <section id="contact">
+  <h2>Contact Me</h2>
+  
+  <form class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div class="contact-links">
+    <a href="mailto:yourname@email.com">Email</a>
+    <a href="https://linkedin.com">LinkedIn</a>
+    <a href="https://github.com/KAINNIKHIL">GitHub</a>
+  </div>
+</section>
+
+  <script src="portfolio.js" defer></script>
+ 
+</body>
+</html>
