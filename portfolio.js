@@ -32,5 +32,5 @@ const menuToggle = document.getElementById("menu-toggle");
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: 'Developer.json'
+      path: 'static/Developer.json'
     });
