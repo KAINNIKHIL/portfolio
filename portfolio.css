@@ -4,14 +4,29 @@
       box-sizing: border-box; 
     }
 
-    body {
-      font-family: "Poppins", sans-serif;
-      line-height: 1.6;
-      color: #ccd6f6;  
-      background: linear-gradient(135deg, #141e30, #243b55); 
-      scroll-behavior: smooth;
-    }
-
+   body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #ccd6f6;  
+  background: linear-gradient(135deg, #141e30, #243b55); 
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  transition: background 0.3s, color 0.3s;
+}
+body.light-mode {
+  color: #222;  
+  background: #eef1f5
+}
+    #theme-toggle {
+  margin-left: auto;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  background: transparent;
+  color: inherit;
+}
     nav {
       position: fixed;
       top: 0;
@@ -87,7 +102,6 @@
 
     #about, #skills {
       background: #112240;
-      border-radius: 12px;
     }
     #about h2 {
       font-size: 32px;
@@ -113,7 +127,14 @@
 .resume-btn:hover {
   background-color: #218672;
 }
-
+body.light-mode #about, body.light-mode #skills, body.light-mode #contact{
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
     #projects h2 { 
       font-size: 32px; 
       margin-bottom: 30px; 
@@ -124,25 +145,48 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
-    .project-card {
-      background: #112240;
-      padding: 20px;
-      border-radius: 12px;
-      border: 1px solid #233554;
-      transition: 0.3s;
-    }
-    .project-card:hover {
-      transform: translateY(-5px);
-      border: 1px solid #4fd1c5;
-    }
-    .project-card h3 { 
-      margin-bottom: 10px; 
-      color: #ccd6f6;
-    }
-    .project-card p { 
-      font-size: 14px; 
-      color: #8892b0; 
-    }
+    /* Dark Mode (Default) */
+.project-card {
+  background: #112240;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #233554;
+  transition: 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid #4fd1c5;
+}
+.project-card h3 { 
+  margin-bottom: 10px; 
+  color: #ccd6f6;
+}
+.project-card p { 
+  font-size: 14px; 
+  color: #8892b0; 
+}
+ 
+ body.light-mode .home-text h2{
+  color: #218672;
+ }
+  body.light-mode .home-text p{
+   color: #777f98; 
+ }
+
+body.light-mode .project-card {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  border: 1px solid #ddd;
+}
+body.light-mode .project-card:hover {
+  border: 1px solid #0077ff;
+}
+body.light-mode .project-card h3 {
+  color: white
+}
+body.light-mode .project-card p {
+  color: rgb(165, 162, 162)
+}
+
     .btn-container {
   margin-top: 15px;
   display: flex;
@@ -293,7 +337,9 @@
       font-size: 14px;
       color: #8892b0;
     }
-
+    body.light-mode #projects h2{
+      color: #218672;
+    }
 
     /* Responsive */
     @media(max-width: 500px) {
