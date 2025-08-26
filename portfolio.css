@@ -12,7 +12,6 @@
       scroll-behavior: smooth;
     }
 
-    /* Navbar */
     nav {
       position: fixed;
       top: 0;
@@ -40,14 +39,13 @@
       color: #4fd1c5; 
     }
 
-    /* Sections */
+    
     section {
       min-height: 100vh;
       padding: 100px 10% 50px;
     }
 
-    /* Hero */
-    #hero {
+    #home {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -59,20 +57,20 @@
       width: 400px;
       height: 400px;
     }
-    .hero-text {
+    .home-text {
       max-width: 500px;
     }
-    .hero-text h2 {
+    .home-text h2 {
       font-size: 48px;
       margin-bottom: 10px;
       color: #4fd1c5
     }
-    .hero-text p {
+    .home-text p {
       font-size: 22px;
       color: #8892b0; 
       margin-bottom: 20px;
     }
-    .hero-text button {
+    .home-text button {
       padding: 12px 28px;
       border: none;
       border-radius: 25px;
@@ -83,11 +81,10 @@
       font-weight: 600;
       transition: 0.3s;
     }
-    .hero-text button:hover {
+    .home-text button:hover {
       background: #218672;
     }
 
-    /* About */
     #about, #skills {
       background: #112240;
       border-radius: 12px;
@@ -101,8 +98,22 @@
       max-width: 600px;
       color: #ccd6f6;
     }
+    .resume-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 22px;
+  background-color: #4fd1c5; 
+  color: rgb(0, 0, 0);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 900;
+  transition: background 0.3s ease;
+}
 
-    /* Projects */
+.resume-btn:hover {
+  background-color: #218672;
+}
+
     #projects h2 { 
       font-size: 32px; 
       margin-bottom: 30px; 
@@ -132,8 +143,35 @@
       font-size: 14px; 
       color: #8892b0; 
     }
+    .btn-container {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
 
-    /* Contact */
+.btn {
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+    .github-btn {
+  background-color: #24292e;
+  color: white;
+}
+.github-btn:hover {
+  background-color: #444c56;
+}
+.live-btn {
+  background-color: #007bff;
+  color: white;
+}
+.live-btn:hover {
+  background-color: #0056b3;
+}
     #contact { 
       background: #0a192f; 
       color: #ccd6f6; 
@@ -214,6 +252,16 @@
     .contact-links {
       margin-top: 20px;
     }
+    #formMessage {
+  margin-top: 15px;
+  font-weight: 600;
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
+
     .project-card {
       background: #112240;
       padding: 20px;
@@ -249,7 +297,7 @@
 
     /* Responsive */
     @media(max-width: 500px) {
-      #hero {
+      #home {
         flex-direction: column;
         text-align: center;
       }
@@ -260,28 +308,28 @@
     }
 
     @media(max-width: 992px) {
-    #hero {
+    #home {
       gap: 30px;
     }
     #dev-animation {
       width: 320px;
       height: 320px;
     }
-    .hero-text h2 {
+    .home-text h2 {
       font-size: 40px;
     }
-    .hero-text p {
+    .home-text p {
       font-size: 20px;
     }
   }
    @media(max-width: 500px) {
-    #hero {
+    #home {
       padding: 0 5%;
     }
-    .hero-text h2 {
+    .home-text h2 {
       font-size: 28px;
     }
-    .hero-text p {
+    .home-text p {
       font-size: 16px;
     }
   }

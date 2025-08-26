@@ -34,3 +34,24 @@ const menuToggle = document.getElementById("menu-toggle");
       autoplay: true,
       path: 'static/Developer.json'
     });
+
+
+  
+  const form = document.getElementById("contact-form");
+  const message = document.getElementById("formMessage");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // stop actual form submission for now
+
+    // Show success message
+    message.classList.remove("hidden");
+
+    // Reset form fields
+    form.reset();
+
+    // Hide message after 3 seconds (optional)
+    setTimeout(() => {
+      message.classList.add("hidden");
+    }, 3000);
+  });
+

@@ -18,7 +18,7 @@
     <span></span>
   </div>
   <ul id="nav-links">
-    <li><a href="#hero" class="active">Home</a></li>
+    <li><a href="#home" class="active">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -28,9 +28,9 @@
 
 
   <!-- Home -->
-  <section id="hero">
+  <section id="home">
     <div id="dev-animation"></div>
-    <div class="hero-text">
+    <div class="home-text">
       <h2>Hello, I'm Nikhil Kaintura</h2>
       <p>Full Stack Developer | Problem Solver | Innovator</p>
       <button onclick="document.getElementById('projects').scrollIntoView()">See My Work</button>
@@ -45,8 +45,10 @@
   With strong skills in <span style="color:#4fd1c5;">HTML, CSS, JavaScript</span>, and modern frameworks,  
   I enjoy building <span style="color:#4fd1c5;">beautiful, functional, and user-friendly</span> web experiences  
   that make an impact.
-</p>
-
+  </p>
+   <a href="Static/nikhil_Resume.pdf" download class="btn resume-btn">
+    Resume
+  </a>
 </section>
   <!-- Skills  -->
    <section id="skills">
@@ -98,18 +100,29 @@
       <img src="Static/vibesoul_pic.png" alt="Social_Media">
       <h3>Social Media Site</h3>
       <p>VibeSoul is an MBTI-based social media web application where users can share posts (vibes), stories, and connect with others through likes, comments, and follows. It features real-time interactions, profile customization, and a clean, modern React + Appwrite powered UI</p>
+      
+      <!-- Buttons -->
+      <div class="btn-container">
+        <a href="https://github.com/KAINNIKHIL/vibesoul_code" target="_blank" class="btn github-btn">GitHub</a>
+        <a href="https://vibesoul.vercel.app" target="_blank" class="btn live-btn">Live</a>
+      </div>
     </div>
 
     <div class="project-card">
       <img src="Static/ecommerce_pic.jpg" alt="ecommerce_pic">
       <h3>Ecommerce Site</h3>
       <p>A fully functional e-commerce web application built with Django, HTML, CSS, and JavaScript, featuring user authentication, product listings, shopping cart, order management, and a seamless checkout process</p>
+      
+      <!-- Buttons -->
+      <div class="btn-container">
+        <a href="https://github.com/KAINNIKHIL/e-commerce" target="_blank" class="btn github-btn">GitHub</a>
+        <a href="https://auracart.pythonanywhere.com" target="_blank" class="btn live-btn">Live</a>
+      </div>
     </div>
-
-   
 
   </div>
 </section>
+
 
 
   <!-- Contact -->
@@ -117,15 +130,15 @@
   <section id="contact">
   <h2>Contact Me</h2>
   
-  <form class="contact-form">
+  <form class="contact-form" id="contact-form">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
+    <button type="submit">Message</button>
   </form>
-
+  <p id="formMessage" class="hidden">Message sent successfully </p>
   <div class="contact-links">
-    <a href="mailto:yourname@email.com">Email</a>
+    <a href="mailto:nikhilsinghkaintura@gmail.com">Email</a>
     <a href="https://linkedin.com">LinkedIn</a>
     <a href="https://github.com/KAINNIKHIL">GitHub</a>
   </div>
