@@ -56,7 +56,7 @@ const menuToggle = document.getElementById("menu-toggle");
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: 'static/Developer.json'
+      path: 'Static/Developer.json'
     });
 
 
