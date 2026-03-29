@@ -1,7 +1,7 @@
+//Set dark-light mode
 const toggleBtn = document.getElementById("theme-toggle");
 const body = document.body;
 
-// Check saved preference
 if (localStorage.getItem("theme") === "light") {
   body.classList.add("light-mode");
   toggleBtn.textContent = "🌙";
@@ -29,7 +29,7 @@ const menuToggle = document.getElementById("menu-toggle");
       navMenu.classList.toggle("active");
     });
 
-
+    //Set active links
     
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("nav a");
@@ -50,32 +50,40 @@ const menuToggle = document.getElementById("menu-toggle");
       });
     });
 
-   
+   //For lottie animation
     lottie.loadAnimation({
       container: document.getElementById('dev-animation'),
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: 'static/Developer.json'
+      path: 'Static/Developer.json'
     });
 
+// Initialize EmailJS
+emailjs.init("OVG9R3e_ugHDqE16g"); 
 
-  
-  const form = document.getElementById("contact-form");
-  const message = document.getElementById("formMessage");
+// For contact form with EmailJS
+const form = document.getElementById("contact-form");
+const message = document.getElementById("formMessage");
 
-  form.addEventListener("submit", function(e) {
-    e.preventDefault(); // stop actual form submission for now
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    // Show success message
+  emailjs.sendForm(
+    "service_8b2s3pe",
+    "template_kz47ra5",
+    this
+  )
+  .then(() => {
     message.classList.remove("hidden");
-
-    // Reset form fields
     form.reset();
 
-    // Hide message after 3 seconds (optional)
     setTimeout(() => {
       message.classList.add("hidden");
     }, 3000);
+  })
+  .catch((error) => {
+    alert("Something went wrong. Try again.");
+    console.log(error);
   });
-
+});

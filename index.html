@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
+  <link rel="icon" href="Static/favicon.svg" type="image/svg+xml">
   <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
   <link rel="stylesheet" href="portfolio.css" />
 </head>
@@ -32,21 +33,26 @@
   <section id="home">
     <div id="dev-animation"></div>
     <div class="home-text">
-      <h2>Hello, I'm Nikhil Kaintura</h2>
-      <p>Full Stack Developer | Problem Solver | Innovator</p>
-      <button onclick="document.getElementById('projects').scrollIntoView()">See My Work</button>
-    </div>
+  <h2>Building Modern Web Experiences</h2>
+  <p>
+    I'm <span style="color:#4fd1c5; font-weight:600;">Nikhil Kaintura</span> — 
+    a Full Stack Developer who turns ideas into powerful, scalable digital products.
+  </p>
+  <button onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">
+    Explore My Projects
+  </button>
+</div>
   </section>
 
   <!-- About -->
   <section id="about">
     <h2>About Me</h2>
    <p style="font-size:18px; line-height:1.8; color:#ccd6f6;">
-  I’m a passionate <span style="color:#4fd1c5; font-weight:600;">Full Stack Developer</span> who loves turning ideas into reality through clean and efficient code.  
-  With strong skills in <span style="color:#4fd1c5;">HTML, CSS, JavaScript</span>, and modern frameworks,  
-  I enjoy building <span style="color:#4fd1c5;">beautiful, functional, and user-friendly</span> web experiences  
-  that make an impact.
-  </p>
+  I’m a <span style="color:#4fd1c5; font-weight:600;">Full Stack Developer</span> focused on building impactful, production-ready web applications that solve real-world problems.  
+  With strong expertise in <span style="color:#4fd1c5;">JavaScript, React.js, Node.js, and modern web architecture</span>,  
+  I design and develop <span style="color:#4fd1c5;">scalable, high-performance, and intuitive</span> digital experiences from concept to deployment.  
+  I thrive on transforming ideas into polished products through clean code, optimized performance, and thoughtful user experience.
+</p>
    <a href="Static/nikhil_Resume.pdf" download class="btn resume-btn">
     Resume
   </a>
@@ -99,10 +105,10 @@
 
     <div class="project-card">
       <img src="Static/vibesoul_pic.png" alt="Social_Media">
-      <h3>Social Media Site</h3>
+      <h3>Social Media Site (VibeSoul)</h3>
+      
       <p>VibeSoul is an MBTI-based social media web application where users can share posts (vibes), stories, and connect with others through likes, comments, and follows. It features real-time interactions, profile customization, and a clean, modern React + Appwrite powered UI</p>
       
-      <!-- Buttons -->
       <div class="btn-container">
         <a href="https://github.com/KAINNIKHIL/vibesoul_code" target="_blank" class="btn github-btn">GitHub</a>
         <a href="https://vibesoul.vercel.app" target="_blank" class="btn live-btn">Live</a>
@@ -111,13 +117,12 @@
 
     <div class="project-card">
       <img src="Static/ecommerce_pic.jpg" alt="ecommerce_pic">
-      <h3>Ecommerce Site</h3>
-      <p>A fully functional e-commerce web application built with Django, HTML, CSS, and JavaScript, featuring user authentication, product listings, shopping cart, order management, and a seamless checkout process</p>
+      <h3>Ecommerce Site (ShopEase)</h3>
+      <p>ShopEase is a scalable full-stack e-commerce application designed to simulate a real-world online shopping system. It demonstrates secure authentication, structured database design, optimized API architecture, payment workflow, and production deployment practices.</p>
       
-      <!-- Buttons -->
       <div class="btn-container">
-        <a href="https://github.com/KAINNIKHIL/e-commerce" target="_blank" class="btn github-btn">GitHub</a>
-        <a href="https://auracart.pythonanywhere.com" target="_blank" class="btn live-btn">Live</a>
+        <a href="https://github.com/KAINNIKHIL/shopease" target="_blank" class="btn github-btn">GitHub</a>
+        <a href="https://shoopease.vercel.app/" target="_blank" class="btn live-btn">Live</a>
       </div>
     </div>
 
@@ -145,7 +150,8 @@
   </div>
 </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="portfolio.js" defer></script>
- 
+  
 </body>
 </html>
