@@ -87,3 +87,13 @@ form.addEventListener("submit", function (e) {
     console.log(error);
   });
 });
+
+const navAnchors = document.querySelectorAll("#nav-links a");
+
+navAnchors.forEach(link => {
+  link.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+      navMenu.classList.remove("active");
+    }
+  });
+});
