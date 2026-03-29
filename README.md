@@ -3,7 +3,7 @@
 A modern, responsive digital portfolio showcasing my work, skills, and projects as a Full Stack Developer.
 
 ## 🚀 Live Demo
-🔗 https://your-portfolio-link.com
+🔗 https://nikhilkaintura.vercel.app/
 
 ---
 
@@ -37,6 +37,7 @@ It focuses on clean UI, smooth user experience, and responsive design across dev
 ---
 
 ## 📂 Project Structure
+```
 portfolio/
 │
 ├── index.html
@@ -45,8 +46,8 @@ portfolio/
 ├── Static/
     └── favicon.svg
     ├── images
-    └── resume
-
+    └── resume.pdf
+```
 
 ---
 
